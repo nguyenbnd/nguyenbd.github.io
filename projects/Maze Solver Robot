@@ -1,37 +1,28 @@
+---
 layout: project
 type: project
-image: img/maze_solver/maze_solver-square.jpg
-title: "Maze Solver Robot"
-date: 2023
+image: img/vacay/vacay-square.png
+title: "Vacay"
+date: 2015
 published: true
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: "Designed and built a robot capable of autonomously solving complex mazes using advanced pathfinding algorithms."
+  - Javascript
+  - Meteor
+  - MongoDB
+  - GitHub
+summary: "A responsive web application for travel planning that my team developed in ICS 415."
 ---
 
-<div class="text-center p-4">
-  <img width="200px" src="../img/maze_solver/robot-front.png" class="img-thumbnail" alt="Maze Solver Robot Front View">
-  <img width="200px" src="../img/maze_solver/robot-side.jpg" class="img-thumbnail" alt="Maze Solver Robot Side View">
-  <img width="200px" src="../img/maze_solver/robot-circuit.png" class="img-thumbnail" alt="Maze Solver Robot Circuit Diagram">
-</div>
+<img class="img-fluid" src="../img/vacay/vacay-home-page.png">
 
-The Maze Solver Robot project involved creating an autonomous robot designed to navigate and solve intricate mazes. The robot uses a combination of sensors and algorithms to map out the maze, find the shortest path, and adapt to complex obstacles.
+Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
 
-Key aspects of the project included:
-- **Design and Assembly:** Constructed the robot with precision components to ensure stability and functionality.
-- **Sensor Integration:** Implemented sensors for maze detection and navigation, including infrared and ultrasonic sensors.
-- **Pathfinding Algorithms:** Developed and integrated algorithms such as A* and Dijkstra's for efficient maze-solving.
-- **Motor Control:** Programmed motor control using PID controllers to enhance movement accuracy and speed.
+Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
 
-Our robot successfully completed various challenging mazes and demonstrated high efficiency in finding optimal paths.
+In this project I gained 2323experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
 
-Below is a sample code used for sensor data acquisition:
+Here is some example code to illustrate Simple Schema use:
 
-```cpp
-int readSensor(int pin)
-{
-    int sensorValue = analogRead(pin);
-    return sensorValue;
-}
+{% gist 9defa1fb3f4eb593ba5fa9eacedca960 %}
+ 
+Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
