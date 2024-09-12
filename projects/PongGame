@@ -10,15 +10,15 @@ labels:
   - GitHub
 summary: "A classic Pong game implemented with JavaScript, demonstrating fundamental game mechanics and coding practices."
 ---
-
+ 
 <img class="img-fluid" src="../img/Pong Image.jfif" alt="Pong Game">
 
-Pong Game is a classic arcade game that I implemented as an individual project in 2015. This project allowed me to dive into game development and enhance my JavaScript skills.
+Pong Game is a classic arcade game that I developed as an individual project in 2015. This project provided an opportunity to explore game development and enhance my JavaScript skills.
 
-The game is built using plain JavaScript, which handles the game logic, rendering, and user input. The project was a great way to understand fundamental game mechanics and the basics of real-time user interaction.
+The game is implemented using plain JavaScript, handling all aspects of the game logic, rendering, and user interaction. Through this project, I gained a deeper understanding of game mechanics and real-time interaction.
 
-Here is some example code to illustrate how the game logic is implemented:
+Here is some example code to illustrate the implementation of the game logic:
 
 {% gist 3f9a8a70a6a5d4f0cce5a8b3d77a2cfd %}
 
-Source: <a href="https://github.com/nguyenbnd/pong-game">nguyenbnd/pong-game</a>
+Source: <a href="https://github.com/yourusername/pong-game">yourusername/pong-game</a>
