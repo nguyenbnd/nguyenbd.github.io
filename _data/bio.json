@@ -7,12 +7,34 @@
     "phone": "808-475-5330",
     "website": "https://nguyenbnd.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii.",
-    "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Honolulu",
+      "countryCode": "USA",
+      "region": "Hawaii"
+    },
     "profiles": [
-      { "network": "github", "username": "", "url": "" },
-      { "network": "linkedin", "username": "", "url": "" },
-      { "network": "twitter", "username": "", "url": "" },
-      { "network": "instagram", "username": "", "url": "" }
+      {
+        "network": "github",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "linkedin",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "twitter",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "instagram",
+        "username": "",
+        "url": ""
+      }
     ]
   },
   "interests": [
@@ -25,7 +47,7 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript" ]
+      "keywords": [ "C", "C++", "Java", "JavaScript" ]
     },
     {
       "name": "Toolsets/OS",
@@ -39,8 +61,7 @@
       "studyType": "B.S.",
       "startDate": "2022-09-01",
       "endDate": "Present",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
@@ -55,7 +76,7 @@
         "Troubleshoot software, hardware and networking issues over the phone",
         "Answer phone and email responses to the ITS Help Desk"
       ]
-    }
+    },
     {
       "company": "UH Information Technology Services",
       "position": "Help Desk Consultant",
@@ -67,5 +88,6 @@
         "Troubleshoot software, hardware and networking issues over the phone",
         "Answer phone and email responses to the ITS Help Desk"
       ]
-    } 
+    }
+  ]
 }
