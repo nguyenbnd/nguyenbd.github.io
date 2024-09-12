@@ -1,0 +1,37 @@
+layout: project
+type: project
+image: img/maze_solver/maze_solver-square.jpg
+title: "Maze Solver Robot"
+date: 2023
+published: true
+labels:
+  - Robotics
+  - Arduino
+  - C++
+summary: "Designed and built a robot capable of autonomously solving complex mazes using advanced pathfinding algorithms."
+---
+
+<div class="text-center p-4">
+  <img width="200px" src="../img/maze_solver/robot-front.png" class="img-thumbnail" alt="Maze Solver Robot Front View">
+  <img width="200px" src="../img/maze_solver/robot-side.jpg" class="img-thumbnail" alt="Maze Solver Robot Side View">
+  <img width="200px" src="../img/maze_solver/robot-circuit.png" class="img-thumbnail" alt="Maze Solver Robot Circuit Diagram">
+</div>
+
+The Maze Solver Robot project involved creating an autonomous robot designed to navigate and solve intricate mazes. The robot uses a combination of sensors and algorithms to map out the maze, find the shortest path, and adapt to complex obstacles.
+
+Key aspects of the project included:
+- **Design and Assembly:** Constructed the robot with precision components to ensure stability and functionality.
+- **Sensor Integration:** Implemented sensors for maze detection and navigation, including infrared and ultrasonic sensors.
+- **Pathfinding Algorithms:** Developed and integrated algorithms such as A* and Dijkstra's for efficient maze-solving.
+- **Motor Control:** Programmed motor control using PID controllers to enhance movement accuracy and speed.
+
+Our robot successfully completed various challenging mazes and demonstrated high efficiency in finding optimal paths.
+
+Below is a sample code used for sensor data acquisition:
+
+```cpp
+int readSensor(int pin)
+{
+    int sensorValue = analogRead(pin);
+    return sensorValue;
+}
