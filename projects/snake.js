@@ -7,6 +7,7 @@ const columns = canvas.width / scale;
 
 let snake;
 let fruit;
+let score = 0;
 
 document.addEventListener('keydown', changeDirection);
 
@@ -19,18 +20,28 @@ function setup() {
 
 function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
     snake.update();
     snake.show();
     fruit.show();
+    
     if (snake.eat(fruit)) {
         fruit.pickLocation();
+        score++;
     }
+    
     if (snake.isDead()) {
-        alert("Game Over!");
+        alert(`Game Over! Your score: ${score}`);
+        score = 0;
         snake = new Snake();
         fruit = new Fruit();
         fruit.pickLocation();
     }
+    
+    ctx.fillStyle = 'white';
+    ctx.font = '20px Arial';
+    ctx.fillText(`Score: ${score}`, 10, 20);
+    
     setTimeout(update, 1000 / 10); // Update every 100 ms
 }
 
