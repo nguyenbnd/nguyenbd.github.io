@@ -8,6 +8,7 @@ published: true
 labels:
   - Javascript
   - GitHub
+  - HTML
 summary: "A classic Pong game implemented with JavaScript, demonstrating fundamental game mechanics and coding practices."
 ---
 
