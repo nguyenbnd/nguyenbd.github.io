@@ -21,4 +21,4 @@ Here is some example code to illustrate the implementation of the game logic:
 
 {% gist 3f9a8a70a6a5d4f0cce5a8b3d77a2cfd %}
 
-Source: <a href="https://github.com/yourusername/pong-game">yourusername/pong-game</a>
+Source: <a href="https://github.com/nguyenbnd/pong-game">nguyenbnd/pong-game</a>
