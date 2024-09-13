@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Exploring TypeScript and the Benefits of WODs"
 # All dates must be YYYY-MM-DD format!
-date: 2024-09-12
+date: 2024-09-6
 published: true
 labels:
   - TypeScript
