@@ -1,82 +1,42 @@
-const canvas = document.getElementById('pongCanvas');
-const ctx = canvas.getContext('2d');
+---
+layout: project
+type: project
+image: img/Pong Image.jfif
+title: "Pong Game"
+date: 2022
+published: true
+labels:
+  - Javascript
+  - GitHub
+summary: "A classic Pong game implemented with JavaScript, demonstrating fundamental game mechanics and coding practices."
+---
 
-// Create the pong paddle
-const paddleWidth = 10, paddleHeight = 100;
-const player = { x: 0, y: canvas.height / 2 - paddleHeight / 2, width: paddleWidth, height: paddleHeight, color: '#fff', dy: 0 };
-const ai = { x: canvas.width - paddleWidth, y: canvas.height / 2 - paddleHeight / 2, width: paddleWidth, height: paddleHeight, color: '#fff', dy: 0 };
+<img class="img-fluid" src="../img/Pong Image.jfif" alt="Pong Game">
 
-// Create the pong ball
-const ball = { x: canvas.width / 2, y: canvas.height / 2, size: 10, speed: 5, dx: 5, dy: 3, color: '#fff' };
+Pong Game is a classic arcade game that I developed as an individual project in 2022. This project provided an opportunity to explore game development and enhance my JavaScript skills.
 
-// Draw the paddle and ball
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    // Draw player paddle
-    ctx.fillStyle = player.color;
-    ctx.fillRect(player.x, player.y, player.width, player.height);
-    
-    // Draw AI paddle
-    ctx.fillStyle = ai.color;
-    ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
-    
-    // Draw ball
-    ctx.beginPath();
-    ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-    ctx.fillStyle = ball.color;
-    ctx.fill();
-    ctx.closePath();
-}
+The game is implemented using plain JavaScript, handling all aspects of the game logic, rendering, and user interaction. Through this project, I gained a deeper understanding of game mechanics and real-time interaction.
 
-// Update the ball's position
-function update() {
-    ball.x += ball.dx;
-    ball.y += ball.dy;
+### Sample Code
 
-    // Ball collision with top/bottom walls
-    if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
-        ball.dy *= -1;
-    }
+Here is some sample code for the Pong game:
 
-    // Ball collision with paddles
-    if (ball.x - ball.size < player.x + player.width && ball.y > player.y && ball.y < player.y + player.height) {
-        ball.dx *= -1;
-    }
-    if (ball.x + ball.size > ai.x && ball.y > ai.y && ball.y < ai.y + ai.height) {
-        ball.dx *= -1;
-    }
+#### HTML
 
-    // Move AI paddle
-    ai.y += (ball.y - (ai.y + ai.height / 2)) * 0.1;
-
-    // Reset ball if it goes out of bounds
-    if (ball.x - ball.size < 0 || ball.x + ball.size > canvas.width) {
-        ball.x = canvas.width / 2;
-        ball.y = canvas.height / 2;
-        ball.dx *= -1;
-        ball.dy = 3;
-    }
-}
-
-// Control the player paddle
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowUp') player.dy = -5;
-    if (event.key === 'ArrowDown') player.dy = 5;
-});
-document.addEventListener('keyup', (event) => {
-    if (event.key === 'ArrowUp' || event.key === 'ArrowDown') player.dy = 0;
-});
-
-function gameLoop() {
-    draw();
-    update();
-    player.y += player.dy;
-
-    // Keep player paddle within canvas
-    if (player.y < 0) player.y = 0;
-    if (player.y + player.height > canvas.height) player.y = canvas.height - player.height;
-
-    requestAnimationFrame(gameLoop);
-}
-gameLoop();
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <style>
+        body { margin: 0; }
+        canvas { background: #000; display: block; margin: auto; }
+    </style>
+</head>
+<body>
+    <canvas id="pongCanvas" width="800" height="400"></canvas>
+    <script src="pong.js"></script>
+</body>
+</html>
