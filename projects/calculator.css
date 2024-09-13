@@ -1,11 +1,16 @@
 /* calculator.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    margin: 0;
 }
 
 .calculator {
@@ -14,7 +19,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     padding: 20px;
-    box-sizing: border-box;
 }
 
 #display {
@@ -27,7 +31,6 @@ body {
     border-radius: 5px;
     padding: 10px;
     font-size: 24px;
-    box-sizing: border-box;
 }
 
 .buttons {
