@@ -10,8 +10,6 @@ labels:
   - Learning
 ---
 
-<img width="100px" class="rounded float-start pe-4" src="../img/stackoverflow/stackoverflow.jpg">
-
 Effective problem-solving in software development often hinges on the quality of questions asked on platforms like Stack Overflow. Raymond's principles suggest that clear, well-structured questions are more likely to yield useful and efficient answers. This essay examines two questions from Stack Overflow: one exemplifying a “smart” question and another demonstrating a “not so smart” approach. By analyzing these examples, we can understand how following Raymond's principles influences the quality of responses and provides insights into how developers can ask better questions.
 
 ## Smart Question Example
